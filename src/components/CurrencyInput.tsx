@@ -52,7 +52,7 @@ export const CurrencyInput: FC<CurrencyInputProps> = ({
 
   return (
     <input
-      type="string"
+      type="tel"
       id={id}
       name={name}
       className={className}
@@ -62,6 +62,7 @@ export const CurrencyInput: FC<CurrencyInputProps> = ({
       value={stateValue}
       pattern="[0-9]+([\.,][0-9]+)?"
       ref={inputRef}
+      autoComplete="off"
     />
   );
 };
